@@ -66,6 +66,13 @@ product
     └── exception  – ProductNotFoundException
 shared.api.response – ErrorMessageResponse
 ```
+## Differences from the slides
+
+- **Project created on start.spring.io instead of IntelliJ's Spring Initializr wizard** – the wizard is only in IntelliJ IDEA Ultimate; the generated project is the same.
+- **springdoc-openapi `3.2.0` instead of `2.0.0`** – version 2.0.0 does not work with Spring Boot 4, which start.spring.io generates today.
+- **Extra dependency `spring-boot-h2console`** – in Spring Boot 4 the H2 console auto-configuration was moved to a separate module; without it `/console` returns 404.
+- **`OldProductRepository` not kept** – optional according to the slides.
+
 
 ## Question from the exercise
 
